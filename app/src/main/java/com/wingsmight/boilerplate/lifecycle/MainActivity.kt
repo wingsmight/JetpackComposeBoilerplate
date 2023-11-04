@@ -5,7 +5,8 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
-import com.wingsmight.boilerplate.presentation.ui.screen.main.MainScreen
+import com.ramcosta.composedestinations.DestinationsNavHost
+import com.wingsmight.boilerplate.presentation.ui.screen.main.NavGraphs
 import com.wingsmight.boilerplate.presentation.ui.theme.AppTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -16,7 +17,11 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             AppTheme {
-                MainScreen()
+                setContent {
+                    AppTheme {
+                        DestinationsNavHost(navGraph = NavGraphs.root)
+                    }
+                }
             }
         }
     }
