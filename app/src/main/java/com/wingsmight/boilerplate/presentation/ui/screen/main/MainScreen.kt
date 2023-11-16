@@ -30,7 +30,7 @@ fun MainScreen(
 
 @Composable
 fun MainScreenContent(
-    state: MainScreenStateState,
+    state: MainScreenState,
     modifier: Modifier = Modifier,
 ) {
     Text("Main screen") // TODO: replace
@@ -41,7 +41,7 @@ fun MainScreenContent(
 private fun MainScreenPreview() {
     AppTheme {
         MainScreenContent(
-            state = MainScreenStateState(user = User.test),
+            state = MainScreenState(user = User.test),
         )
     }
 }

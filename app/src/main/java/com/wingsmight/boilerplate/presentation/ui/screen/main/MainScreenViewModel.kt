@@ -8,6 +8,6 @@ import javax.inject.Inject
 
 @HiltViewModel
 class MainScreenViewModel @Inject constructor() : ViewModel() {
-    private val _state = mutableStateOf(MainScreenStateState())
-    val state: State<MainScreenStateState> = _state
+    private val _state = mutableStateOf(MainScreenState())
+    val state: State<MainScreenState> = _state
 }
