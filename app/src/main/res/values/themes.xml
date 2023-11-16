@@ -2,7 +2,7 @@
 <resources>
 
     <style name="Theme.Boilerplate" parent="android:Theme.Material.Light.NoActionBar">
-        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
 
     <style name="Theme.Boilerplate.SplashScreen" parent="Theme.SplashScreen">
