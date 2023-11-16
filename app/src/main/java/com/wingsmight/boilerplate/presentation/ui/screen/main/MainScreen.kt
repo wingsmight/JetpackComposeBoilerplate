@@ -29,7 +29,7 @@ fun MainScreen(
 }
 
 @Composable
-fun MainScreenContent(
+private fun MainScreenContent(
     state: MainScreenState,
     modifier: Modifier = Modifier,
 ) {
